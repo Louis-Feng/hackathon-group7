@@ -16,14 +16,6 @@ import ResetPassword from './pages/ResetPassword';
 import Calendar from './pages/Calendar';
 import Profile from './pages/Profile'
 
-import { Amplify, API, Auth, Storage } from 'aws-amplify';
-const awsExports = require('@/aws-exports').default;
-
-Amplify.register(API)
-Amplify.register(Storage)
-Amplify.register(Auth)
-/* Register the services before configure */
-Amplify.configure(awsExports)
 
 function App() {
 
